@@ -4,7 +4,7 @@
 
 A portfolio of work to showcase skills and talents to employers looking to fill a part-time or full-time position. It should meet all critical requirements necessary to satisfy a typical hiring manager’s needs.  It should highlight my strongest work as well as the thought processes behind it.
 
-The following acceptance criteria was as follow:
+The following acceptance criteria was as follows:
 
 ## Acceptance Criteria
 
