@@ -2,6 +2,7 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
@@ -9,9 +10,8 @@ body {
 }
 
 /* Header with image and navbar */
-header {
+nav a h1 {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: darkgray;
     color: #ffffff;
 }
@@ -33,11 +33,13 @@ header div {
 }
 
 /* My professional portfolio image */
-header img {
+nav a img {
     height: 125px;
+    width: 125px;
 }
 
 div a {
+    font-size: 20px;
     color:white;
     text-decoration: none;
 }
@@ -68,6 +70,22 @@ h4 {
     text-align: center;
 }
 
+h5 {
+    color: white;
+    background-color: darkgray;
+    border-radius:10%;
+}
+
+.navCustom {
+    padding: 20px;
+    background-color: darkgray;
+    color: #ffffff;
+}
+
+#technology {
+    text-align:center;
+}
+
 .education {
     padding:10px;
     margin-left:150px;
@@ -76,53 +94,27 @@ h4 {
     font-size: 20px;
 }
 
-.samples {
-    display:flex;
-    flex-wrap:wrap;
-    padding:5px;
+.flexcard {
+    display: inline-block;
     justify-content: center;
-  }
+    flex-direction: row;
+    text-align:center;
+    height: 17rem; 
+    width: 30rem;
+    border: 5px solid black;
+    border-radius: 15%;
+    margin:2px;
+}
 
-/* Header for most important project */
-#bigCardHeader {
-    padding: 20px;
-    background: darkgrey;
-    color: #fff;
-    width: 200px;
-    height: 12px;
-    }
+div img {
+    height:10rem;
+    width: 30rem;
+}
 
-/* Image for most important project */
-#bigCardImg {
-    display:flex;
-    flex-wrap:wrap;
-    width: 200px;
-    height: 200px;
-    margin:0;
-  }
-
-.card {
-    display:flex;
-    width: 15em;
-    text-align: center;
-    margin:0;
-    }
-
-.card header {
-    padding: 20px;
-    background: darkgrey;
-    color: #fff;
-    width: 150px;
-    height: 12px;
-    }
-
-.card img {
-    display:flex;
-    flex-wrap:wrap;
-    width: 150px;
-    height: 150px;
-    margin:0;
-    }
+.cardLinkCustom {
+    color: black;
+    background-color: white;
+}
 
 footer {
     display:inline-block;
@@ -130,9 +122,18 @@ footer {
     margin-bottom:50px;
      }
 
+footer p {
+    display: inline-block;
+    font-size:20px;
+    color:white;
+}
+     
+p span {
+    font-size:20px;
+    color:black;
+}
 footer ul li {
     display:inline-block;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size:20px;
     color:black;
     justify-content: space-between;
@@ -158,7 +159,8 @@ footer ul li a {
 /* Wraps the work sample elements when resizing viewport */
 @media screen and (max-width: 768px) {
     .samples {
-    flex-direction: row;
+    flex-direction: column !important;
     flex-wrap: wrap;
+
     }
 }
