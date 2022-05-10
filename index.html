@@ -12,32 +12,48 @@
   </head>
 
   <body>
-    <!-- Professional photo and name --> 
-    <nav class="navbar navCustom">
-     <!-- <a class="navbar-brand" href="#"> -->
-        <img src="./assets/images/202122_SchoolPic_crop.JPG" width="100" height="100" class="d-inline-block align-top" alt="">
-        <h1>Dennis M. Downer</h1>
-      </a>
-        <!-- Navbar --> 
-      <div>
-        <a href="#aboutMe">About Me</a>
-        <br>
-        <a href="#workSamples">Work Samples</a>
-        <br>
-        <a href="#contact">Contact</a>
-        <br>
-        <a href="./assets/files/DownerResume_2022.pdf" class="resume">Link to Resume</a>
+   <!-- Jumbotron for image and title -->
+    <div class="jumbotron">
+      <img class="card-img-top profilePic" src="./assets/images/202122_SchoolPic_crop.JPG" alt="Me Pic">
+      <h1 class="display-1" id="top">Dennis M. Downer</h1>
     </div>
-    </nav>
-    
-     
+    <!-- Responsive navbar -->
+    <nav class="navbar navbar-expand-lg navCustom">
+       <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class="nav-link navLinkCustom" href="#top">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinkCustom" href="#aboutMe">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinkCustom" href="#workSamples">Work Samples</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinkCustom" href="#contact">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navLinkCustom" href="./assets/files/DownerResume_2022.pdf">Resume (pdf)</a>
+          </li>
+        </ul>
+      </nav>
+         
     <!-- Resume --> 
     <section>
         <h2 id="aboutMe">About Me</h2>
         <h3>Certifications</h3>
         <h4>Currently enrolled in the Georgia Tech Coding Boot Camp</h4>
-        <p id="technology" class="education">
-          Languages/Technologies: HTML, CSS, JavaScript, JQuery, Bootstrap, Moment, node.js
+          <p id="technology">
+          <span>Browser-Based Technologies: </span>HTML, CSS, JavaScript, jQuery, Responsive Design, Bootstrap, Progressive Web Applications (PWAs), React.js
+          </p>
+          <p id="technology">
+            <span>API Design: </span>Client-Server Model, API, REST, JSON, AJAX
+          </p>
+          <p id="technology">
+            <span>Databases: </span>MySQL, MongoDB
+          </p>
+          <p id="technology">
+            <span>Deployment & Delivery: </span>Heroku, Git, GitHub
           </p>
         <h3>Multilingual World Language Teacher</h3>
         <h4>Education</h4>
@@ -64,6 +80,8 @@
         </ul>
      </section>
 
+     <a class="backToTop" href="#top">Back to Top</a>
+
      <!-- Horizontal rule -->
      <hr>
 
@@ -71,14 +89,25 @@
     <section>
      <h2 id="workSamples">Work Samples</h2>
      
-    <div class="card flexcard">
+     <div class="card flexcard">
       <div class="card-body">
-          <h5 class="card-title">Reddit Data-dive</h5>
+          <h5 class="card-title">Find-A-Doc</h5>
+      </div>
+      <div>
+          <img class="card-img-top" src="./assets/images/FindADoc.png" alt="FindADoc Project Image">
+          <a href="https://find-a-doc.herokuapp.com/login" class="card-link cardLinkCustom">Deployed App</a>
+          <a href="https://github.com/jorross/FindADoc" class="card-link cardLinkCustom">GitHub Repo</a>
+      </div>
+    </div>
+
+     <div class="card flexcard">
+      <div class="card-body">
+          <h5 class="card-title">Reddit Data Dive</h5>
       </div>
       <div>
           <img class="card-img-top" src="./assets/images/RedditDataDive.png" alt="Reddit Project Image">
           <a href="https://downerdm.github.io/reddit-data-dive_dmd/" class="card-link cardLinkCustom">Deployed App</a>
-          <a href="https://github.com/downerdm/reddit-data-dive_dmd" class="card-link cardLinkCustom">GitHub Repo</a>
+          <a href="https://github.com/AmyWilhoite/reddit-data-dive" class="card-link cardLinkCustom">GitHub Repo</a>
       </div>
     </div>
   
@@ -103,7 +132,31 @@
           <a href="https://github.com/downerdm/weather-dashboard" class="card-link cardLinkCustom">GitHub Repo</a>
         </div>
       </div>
+
+      <div class="card flexcard">
+        <div class="card-body">
+          <h5 class="card-title">Password Generator</h5>
+        </div>
+        <div>
+          <img class="card-img-top" src="./assets/images/PwdGen_DMD.png" alt="Password Generator Image">
+          <a href="https://downerdm.github.io/password-generator/" class="card-link cardLinkCustom">Deployed App</a>
+          <a href="https://github.com/downerdm/password-generator" class="card-link cardLinkCustom">GitHub Repo</a>
+        </div>
+      </div>
+
+      <div class="card flexcard">
+        <div class="card-body">
+          <h5 class="card-title">Regex Gist</h5>
+        </div>
+        <div>
+          <img class="card-img-top" src="./assets/images/RegExGist_DMD.png" alt="RegEx Gist Image">
+          <a href="https://gist.github.com/downerdm/54d4c68fcd30caeb2639f0f8c514b431" class="card-link cardLinkCustom">GitHub Gist</a>
+        </div>
+      </div>
+
       </section>
+
+      <a class="backToTop" href="#top">Back to Top</a>
      
   <!-- Horizontal rule -->
   <hr>

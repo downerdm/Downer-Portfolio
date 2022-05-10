@@ -2,7 +2,7 @@
 
 ## Your Task
 
-A portfolio of work to showcase skills and talents to employers looking to fill a part-time or full-time position. It should meet all critical requirements necessary to satisfy a typical hiring manager’s needs.  It should highlight my strongest work as well as the thought processes behind it.
+The task was to develop a portfolio of work to showcase skills and talents to employers looking to fill a part-time or full-time position. It should meet all critical requirements necessary to satisfy a typical hiring manager’s needs.  It should highlight my strongest work as well as the thought processes behind it.
 
 The following acceptance criteria was as follows:
 
@@ -16,8 +16,6 @@ WHEN I click one of the links in the navigation
 THEN the UI scrolls to the corresponding section
 WHEN I click on the link to the section about their work
 THEN the UI scrolls to a section with titled images of the developer's applications
-WHEN I am presented with the developer's first application
-THEN that application's image should be larger in size than the others
 WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
@@ -35,14 +33,16 @@ The page consists of 4 primary sections:
   
 Semantic html was used throughout allowing for better accessibility.  All images have ALT tags.
 
-The section with icons of and links to my projects incorporates responsive design, allowing the page to reassemble itself on smaller viewports.  Since I have not done that many projects, I used the last space as a holder for what comes next.
+The page is designed for easy navigation.
 
-At W3Schools I learned how to (and took the code to) incorporate social media icons in the contact section.
+A link was created where a person can click to get a pdf copy of my resume.
+
+The navigation bar and cards used Bootstrap to allow for responsive design on smaller devices.
 
 ## URL
 
 https://downerdm.github.io/Downer-Portfolio/
 
-## Picture
+## Screenshot
 
-<img width="636" alt="Portfolio_ScreenShot" src="https://user-images.githubusercontent.com/94584327/148878533-9e44f889-a32b-4e0b-8034-669b487ae6c2.png">
+![Downer Portfolio Page](./assets/images/DMD_Portfolio.png)
